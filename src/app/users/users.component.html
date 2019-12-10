@@ -1,0 +1,8 @@
+<ng-container *ngFor="let user of users$ | async;let i = index">
+    <p>User No : {{i + 1}}</p>
+    <p>{{ user | json}}</p>
+    <p>Name : {{user.personal_info.name}}</p>
+    <p>Email : {{user.personal_info.email}}</p>
+    <p>Phone : {{user.personal_info.phone}}</p>
+</ng-container>
+
